@@ -1,0 +1,18 @@
+language: html
+branches:
+  only:
+  - master
+before_install:
+- npm install -g npm@2
+- npm install -g grunt-cli
+- npm install -g bower
+install:
+- npm install
+- bower install
+script:
+- grunt
+after_success:
+- make github_deploy
+env:
+  global:
+    secure: YNUftQPYvnZwGoBfbxiK3wxBwCD8jiW0iwG8CuBIETi8i3BSn1ux2Rlqw+5z7a/U8vpQlVTZ+i8T1t12wCRe+U4Rqm1cIj95PwvDSCdxggNsOBk6sGBDqLmqvPcT9RXnfK/7m6ntmW3dMY0SO2CcSTIkcw5D9ATo/D0IMq3Z/0qaTmNHNCTz48JC2P1NBQ/T3OjjzmgLiMuDLJWURai+87n1hNUI5XTe7wsQKbH7jjZb0kxn2a+9RaAjCyCKPjQUoq8I0G1/zPSzUadPeGAaBi8PqgsPimWyMd8HhJloKz3SsgMGUaDi1LrLEEEudAHIEnw65Cv2iHIk4pFES0xSZZgNrFJ4jyDLmNguJ+hHHlqKMl82/Ke/rIZN6MbcB4tKyyRuqwqlKEud2XhJxcpGql+Kgmpt7eu3C4KWLyAyyxzJlu2YxJy03zS5AnE/zuGPvWX2KeE7yRgLJ7VuBgJrZoR5g7iRMQqWyiJIMaLA4ecO62KsdrOP4R5DzB0Rm/ldvWsG3JQ13TqMYB7+Zab6K9iw08LbLn72hY/MQ4EFct4NkEBIVRbTXKHcYLNUoNIsAPb5YusEPXDU8Bb//HI1WrM2Mt+06a7FoyCWX+NB05CJTzCsCAlDEDM5fm9rHZmlgk+cs6c8QuF3icuQqfsilLtExwjiHP1mND8YEi+JUPo=
