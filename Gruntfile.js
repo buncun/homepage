@@ -127,14 +127,14 @@ module.exports = function (grunt) {
     },
 
     // Mocha testing framework configuration options
-    // mocha: {
-    //   all: {
-    //     options: {
-    //       run: true,
-    //       urls: ['http://<%= browserSync.test.options.host %>:<%= browserSync.test.options.port %>/index.html']
-    //     }
-    //   }
-    // },
+    mocha: {
+      all: {
+        options: {
+          run: true,
+          urls: ['http://<%= browserSync.test.options.host %>:<%= browserSync.test.options.port %>/index.html']
+        }
+      }
+    },
 
     // Compiles ES6 with Babel
     babel: {
@@ -420,10 +420,10 @@ module.exports = function (grunt) {
       ]);
     }
 
-    // grunt.task.run([
-    //   'browserSync:test',
-    //   'mocha'
-    // ]);
+    grunt.task.run([
+      'browserSync:test',
+      'mocha'
+    ]);
   });
 
   grunt.registerTask('build', [

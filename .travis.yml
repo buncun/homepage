@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - '0.12'
+python:
+- '2.7'
+cache:
+  directories:
+  - "$HOME/.pip-cache/ - /home/travis/virtualenv/python2.7 - node_modules"
 branches:
   only:
   - master
@@ -8,6 +13,7 @@ before_install:
 - npm install -g npm@2
 - npm install -g grunt-cli
 - npm install -g bower
+- pip install -r requirements.txt --download-cache $HOME/.pip-cache
 install:
 - npm install
 - bower install
