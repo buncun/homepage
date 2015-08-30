@@ -176,11 +176,10 @@ h3 {
 }
 
 .social-wrapper {
-  margin-top: 10px;
+  margin-top: 30px;
   ul {
     list-style-type: none;
     padding: 0;
-    /* margin: 0; */
     li {
       display: inline;
       margin: 0 2px;
@@ -226,7 +225,7 @@ h3 {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  h1 {font-size: 45px; line-height: 28px; }
+  h1 {font-size: 45px; line-height: 30px; }
   h3 { font-size: 15px; line-height: 20px; }
   .btn {
     width: 100px;
@@ -240,7 +239,7 @@ h3 {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   h1 { font-size: 30px; line-height: 20px; }
-  h3 { font-size: 12px; line-height: 5px; }
+  h3 { font-size: 12px; line-height: 15px; }
   .btn {
     width: 80px;
     padding: 5px 8px;
@@ -253,7 +252,7 @@ h3 {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   h1 {font-size: 30px; line-height: 15px; }
-  h3 { font-size: 12px; line-height: 5px; }
+  h3 { font-size: 12px; line-height: 10px; }
   .btn {
     width: 60px;
     padding: 5px 8px;
