@@ -288,6 +288,18 @@ h3 {
 }
 
 /* icons */
+.icon-common {
+  &.icon-hidden-small {
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 480px) {
+      &:before {
+        content: "";
+        left: 0em;
+      }
+    }
+  }
+}
+
 .hvr-icon-linkedin {
   @include icon-float();
   &:before {
