@@ -16,7 +16,6 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/fontello.css">
 
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,32 +23,45 @@
     <!-- endbuild -->
 
   </head>
-  <body class="blurred-background"">
+  <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section id="intro" class="absolute-center">
-      <div class="container">
-        <hr class="hr-dashed cl-white">
-        <div class="info-wrapper">
-          <h1>Thomas <span class="last-name">Phan</span></h1>
-          <h3>software engineer / data analyst</h3>
+    <div class="main">
+      <video id="video-bg" autoplay loop muted preload="auto" poster="./images/black-pix.jpg" >
+		<source type="video/mp4" src="./videos/coding.mp4">
+		<source type="video/webm" src="./videos/coding.webm">
+	  </video>
+      <section id="intro" class="absolute-center blurred-background">
+        <div class="container">
+          <hr class="hr-dashed cl-white">
+          <div class="info-wrapper">
+            <h1 class="name fadeIn">THOMAS <span class="last-name">PHAN</span></h1>
+            <h3 class="title fadeIn-long">ingénieur de développement / analyste de données</h3>
+          </div>
+          <div class="contact-wrapper fadeIn-longer">
+            <ul>
+              <li><span class="icon-location">Nantes</span></li>
+              <li><span class="icon-mobile mobile-number">06 52 73 47 09</span></li>
+              <li><a href="mailto:tom@pdt.space"><span class="icon-mail">tom@pdt.space</span></a></li>
+            </ul>
+          </div>
+          <hr class="hr-dashed cl-white">
+          <div class="social-wrapper fadeIn-longest">
+            <ul>
+              <li><a href="http://blog.pdt.space" class="btn btn-transparent btn-white hvr-fade hvr-icon-globe icon-common icon-hidden-small">Blog</a></li>
+              <li><a href="http://pdt.space/cv" class="btn btn-transparent btn-white hvr-icon-document hvr-icon-external-link icon-common icon-hidden-small">CV</a></li>
+              <li><a href="http://fr.linkedin.com/in/pdt89" class="btn btn-transparent btn-white hvr-fade hvr-icon-linkedin icon-common icon-hidden-small">LinkeIn</a></li>
+            </ul>
+          </div>
         </div>
-        <hr class="hr-dashed cl-white">
-        <div class="social-wrapper"">
-          <ul>
-            <li><a href="http://blog.pdt.space" class="btn btn-transparent btn-white hvr-fade hvr-icon-globe icon-common icon-hidden-small">Blog</a></li>
-            <li><a href="http://pdt.space/cv" class="btn btn-transparent btn-white hvr-fade hvr-icon-external-link icon-common icon-hidden-small">CV</a></li>
-            <li><a href="fr.linkedin.com/in/pdt89" class="btn btn-transparent btn-white hvr-fade hvr-icon-linkedin icon-common icon-hidden-small">LinkeIn</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
