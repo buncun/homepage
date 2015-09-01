@@ -283,7 +283,6 @@ ul {
 .contact-wrapper {
   font-size: 12px;
   color: $regular-color;
-  
   a {
     text-decoration: none;
     font-size: 12px;
@@ -320,10 +319,11 @@ ul {
   &.icon-hidden-small {
     /* Landscape phones and portrait tablets */
     @media (max-width: 480px) {
-      &:before {
-        content: "";
-        left: 0em;
-        padding: 0 5px 0 1px;
+      &:before {/* 
+                   content: "";
+                   left: 0em;
+                   padding: 0 5px 0 1px; */
+         display: none;
       }
     }
   }

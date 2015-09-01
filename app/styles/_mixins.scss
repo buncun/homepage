@@ -130,7 +130,10 @@ $includeClasses: true !default;
 @mixin icon-float {
   @include hacks();
   position: relative;
-  padding-right: 0em;
+  padding-right: 1em;
+  @media (min-width: 480px) {
+    padding-right: 0;
+  }
   @include prefixed(transition-duration, $mediumDuration);
   &:before {
 	content: "\e800";
